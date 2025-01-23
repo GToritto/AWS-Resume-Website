@@ -1,0 +1,1 @@
+aws s3 sync "C:\Users\giuse\Desktop\AWS\AWS Resume Website" s3://giuseppewebsite --delete

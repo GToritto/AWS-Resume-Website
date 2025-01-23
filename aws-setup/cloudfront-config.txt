@@ -1,0 +1,28 @@
+1. Distribution ID:
+   - E3E8QON9HYV9PW
+   - https://d2xmrevo6wv6dp.cloudfront.net 
+
+2. Origin Settings:
+   - Origin Domain Name: giuseppewebsite.s3-website.us-east-2.amazonaws.com
+   - Origin Protocol Policy: HTTPS Only
+   - Allowed Methods: GET, HEAD
+   - Viewer Protocol Policy: Redirect HTTP to HTTPS
+
+3. Cache Behavior:
+   - Path Pattern: Default (*) behavior
+   - Minimum TTL: 0 seconds
+   - Default TTL: 3600 seconds (1 hour)
+   - Maximum TTL: 86400 seconds (24 hours)
+
+4. HTTPS and Security:
+   - SSL Certificate: Default CloudFront certificate (*.cloudfront.net)
+   - Custom Domain: Not configured
+   - HTTPS Enforced: Yes
+
+5. Cache Invalidation Notes:
+   - Paths invalidated: "/*" (entire distribution)
+   - Typical invalidation time: 5–15 minutes
+
+6. Comments:
+   - CloudFront caches content at edge locations to improve performance.
+   - Cache invalidation used for immediate updates.

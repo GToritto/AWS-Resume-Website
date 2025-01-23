@@ -1,0 +1,223 @@
+/* General resets & font styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex; /* So that sidebar and content sit side-by-side */
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background-color: white; /* Set background to white */
+}
+
+section {
+  padding: 20px;
+  margin: 10px;
+  background: #efefef;
+  border-radius: 5px;
+  width: 80%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 390px;
+  min-height: 100vh;
+  background-color: #0e1c28; /* Dark background */
+  padding: 20px;
+}
+
+.sidebar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+}
+
+.sidebar-nav li {
+  margin-bottom: 20px;
+}
+
+.sidebar-nav a {
+  color: #b5c0c8;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+  color: #fff;
+}
+
+/* Main Content */
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.content::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15%; /* Adjust this value as needed */
+  height: 100vh;
+  background-color: #0e1c28; /* Blue color matching the sidebar */
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+.intro-section {
+  background: #fff;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.small-text {
+  font-size: 2rem;
+  color: #9d3c3c;
+  font-family: 'Josefin Slab', serif;  
+  font-weight: 700; 
+}
+
+.separator {
+  width: 100px;
+  height: 2px;
+  background-color: #333;
+  margin: 10px 0;
+}
+
+.name-heading {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+}
+
+.role-heading {
+  font-size: 1.8rem;
+  color: #777;
+  font-family: 'Josefin Slab', serif;  
+  font-weight: 700; 
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+}
+
+/* Buttons */
+.btn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 0px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  margin: 0;
+  box-sizing: border-box; /* Ensure padding is part of the total width */
+  text-align: center; /* Horizontally centers text */
+  display: flex; /* Flexbox for better alignment */
+  align-items: center; /* Vertically centers text */
+  justify-content: center; /* Horizontally centers text */
+}
+
+.btn-resume {
+  background-color: #dc3545; /* Red button */
+  color: #fff;
+}
+
+.btn-resume:hover {
+  background-color: #2ab56b;
+}
+
+.btn-portfolio {
+  background-color: #192d3e; /* Navy button */
+  color: white;
+}
+
+.btn-portfolio:hover {
+  background-color: #b5a12e;
+}
+
+/* About Section */
+.about-section {
+  padding: 30px 40px;
+  border-radius: 4px;
+}
+
+.about-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+}
+
+.about-text {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 14px;
+  width: 80%;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.skill-bar {
+  height: 8px;
+  background-color: #d01111;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color: #35dc3b; /* Use the same color or any accent color */
+  transition: width 0.4s ease;
+}
+
