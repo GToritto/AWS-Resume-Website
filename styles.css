@@ -222,22 +222,42 @@ section {
   transition: width 0.4s ease;
 }
 
-.btn-contact {
-  display: block;
-  margin: 20px auto; /* Centers the button */
+.contact-button {
+  display: flex;
+  justify-content: center; /* Align buttons to the left and right */
+  align-items: center;
+  width: 100%; /* Ensures full width */
+  max-width: 600px; /* Adjust based on your layout */
+  margin: 20px auto; /* Centers the entire button container */
+}
+
+.btn-contact, .btn-github {
+  display: inline-block; /* Ensures buttons stay inline */
   padding: 10px 20px;
   font-size: 1.5rem;
-  border-radius: 50px;
+  border-radius: 0px;
   text-align: center;
-  background-color: #7581FF;
-  color: white;
   text-decoration: none;
-  font-weight: regular;
-  width: 250px; /* Adjust size */
+  font-weight: 600;
+  width: 250px; /* Keeps button width consistent */
   text-transform: uppercase;
   transition: background 0.3s ease-in-out;
 }
 
+.btn-contact {
+  background-color: #4d5bff;
+  color: white;
+}
+
 .btn-contact:hover {
-  background-color: #fe5151; /* Slightly darker shade on hover */
+  background-color: #424242;
+}
+
+.btn-github {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.btn-github:hover {
+  background-color: #0c15b5;
 }
