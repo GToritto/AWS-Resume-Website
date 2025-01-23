@@ -97,9 +97,9 @@ section {
 }
 
 .intro-image img {
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 50px;
 }
 
 .small-text {
@@ -167,6 +167,7 @@ section {
   color: white;
 }
 
+
 .btn-portfolio:hover {
   background-color: #b5a12e;
 }
@@ -221,3 +222,22 @@ section {
   transition: width 0.4s ease;
 }
 
+.btn-contact {
+  display: block;
+  margin: 20px auto; /* Centers the button */
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  text-align: center;
+  background-color: #7581FF;
+  color: white;
+  text-decoration: none;
+  font-weight: regular;
+  width: 250px; /* Adjust size */
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-contact:hover {
+  background-color: #fe5151; /* Slightly darker shade on hover */
+}

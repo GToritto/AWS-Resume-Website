@@ -9,7 +9,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
   formStatus.textContent = "Sending...";
 
   try {
-    const response = await fetch("https://4ppe2ag751.execute-api.us-east-2.amazonaws.com/CORSv1", {  
+    const response = await fetch("https://4ppe2ag751.execute-api.us-east-2.amazonaws.com/CORSv1/ContactFormHandler", {  
       method: "POST",
       headers: {
         "Content-Type": "application/json"

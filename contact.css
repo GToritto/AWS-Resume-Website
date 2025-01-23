@@ -1,0 +1,153 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #373737;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body {
+  padding-right: 15px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #7581FF;
+}
+
+.material-icons {
+  font-size: 18px;
+  margin-left: 4px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 3rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 1.5rem rgba(0,0,0, .25);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #373737;
+  margin-bottom: 1rem;
+}
+
+form {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  border: 1px solid #c1c1c1;
+  border-radius: 0.4rem;
+  text-align: center;
+}
+
+.form__label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #565656;
+}
+
+.form__btn {
+  background: #7581FF;
+  color: #fff;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,0,0, .15);
+  transition: background 0.2s;
+}
+
+.form__btn:hover {
+  background-color: #5162fe;
+}
+
+#formStatus {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #373737;
+}
+
+.container-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
