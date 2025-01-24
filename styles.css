@@ -26,15 +26,26 @@ section {
 
 /* Sidebar */
 .sidebar {
-  width: 390px;
+  width: 290px;
   min-height: 100vh;
   background-color: #0e1c28; /* Dark background */
   padding: 20px;
 }
 
+.right-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 230px;
+  height: 100vh;
+  background-color: #0e1c28; /* Same as left sidebar */
+  padding: 20px;
+ 
+}
+
 .sidebar-brand {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -50,7 +61,7 @@ section {
 .sidebar-nav a {
   color: #b5c0c8;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
   transition: color 0.3s ease;
 }
 
@@ -62,23 +73,18 @@ section {
 .content {
   position: relative;
   display: flex;
+  flex-direction: column; /* Keep it vertical */
   justify-content: center;
-  align-items: left;
-  flex-direction: column;
+  align-items: flex-start; /* Keep content left-aligned */
   min-height: 100vh;
   padding: 20px;
+  box-sizing: border-box;
+
+  /* Adjust margins so content fits between both sidebars */
+  margin: 0;
+  width: 100%; /* Ensures content stays within available space */
 }
 
-.content::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 15%; /* Adjust this value as needed */
-  height: 100vh;
-  background-color: #0e1c28; /* Blue color matching the sidebar */
-  z-index: -1; /* Ensure it stays behind the content */
-}
 
 .intro-section {
   background: #fff;
@@ -97,7 +103,7 @@ section {
 }
 
 .intro-image img {
-  max-width: 400px;
+  max-width: 350px;
   height: auto;
   border-radius: 50px;
 }
@@ -188,40 +194,6 @@ section {
   margin-bottom: 30px;
 }
 
-/* Skills Section */
-.skills {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.skill {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 14px;
-  width: 80%;
-}
-
-.skill-info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-.skill-bar {
-  height: 8px;
-  background-color: #d01111;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.skill-progress {
-  height: 100%;
-  background-color: #35dc3b; /* Use the same color or any accent color */
-  transition: width 0.4s ease;
-}
-
 .contact-button {
   display: flex;
   justify-content: center; /* Align buttons to the left and right */
@@ -260,4 +232,18 @@ section {
 
 .btn-github:hover {
   background-color: #0c15b5;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+      width: 95%; /* Increase width on smaller screens */
+      padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-content {
+      width: 100%; /* Full width on mobile */
+      padding: 10px;
+  }
 }
