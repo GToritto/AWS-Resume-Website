@@ -49,7 +49,7 @@ This project demonstrates how I deployed a website using **Amazon S3** for stati
   - The response is sent back to the frontend to display success/failure messages.
 
 ## Key Learnings
-- Mastered S3 and CloudFront for hosting and content delivery.
+- S3 and CloudFront for hosting and content delivery.
 - Automated deployments with AWS CLI.
 - Built a serverless contact form using AWS Lambda, API Gateway, and SES.
 - Configured SES for email authentication and DKIM verification.
